@@ -10,7 +10,7 @@ const userName = ' '
 
 //start puppetteer instructions
 
-async function start() {
+async function startKahoot() {
     for (let i = 0; i < 10; i++) {
     
     const browser = await puppeteer.launch({ headless: false });
@@ -57,4 +57,4 @@ async function start() {
     }
 }
 
-start()
+startKahoot()
