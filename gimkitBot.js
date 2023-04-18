@@ -8,8 +8,8 @@ const gimkitSessionStorage = require('./gimkitSessionStorage.js');
 import { gimkitTempBotName, gimkitTempGameCode } from './gimkitSessionStorage.js';
 
 //Edit these values 
-const gimkitKey = gimkitTempGameCode;
-const gimkitUserName = gimkitTempBotName
+let gimkitKey = gimkitTempGameCode;
+let gimkitUserName = gimkitTempBotName
 
 
 //start puppetteer instructions

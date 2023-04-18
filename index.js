@@ -10,8 +10,8 @@ import { kahootTempBotName, kahootTempGameCode } from './kahootSessionStorage.js
 
 
 //Edit these values 
-const kahootKey = kahootTempGameCode;
-const userName = kahootTempBotName;
+let kahootKey = kahootTempGameCode;
+let userName = kahootTempBotName;
 
 
 //start puppetteer instructions
