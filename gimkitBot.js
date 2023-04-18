@@ -2,6 +2,9 @@ const puppeteer = require('puppeteer');
 const fs = require('fs/promises')
 const cron = require('node-cron')
 
+const gimkitSessionStorage = require('./gimkitSessionStorage.js');
+
+
 import { gimkitTempBotName, gimkitTempGameCode } from './gimkitSessionStorage.js';
 
 //Edit these values 
