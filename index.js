@@ -4,7 +4,6 @@ const cron = require('node-cron')
 
 const kahootSessionStorage = require('./kahootSessionStorage.js');
 
-
 import { kahootTempBotName, kahootTempGameCode } from './kahootSessionStorage.js';
 
 
