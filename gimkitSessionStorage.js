@@ -28,4 +28,4 @@ kahootButton.addEventListener('click', function(event) {
 
 
 
-export { gimkitTempBotName, gimkitTempGameCode };
+export { gimkitTempGameCode, gimkitTempBotName,  };
