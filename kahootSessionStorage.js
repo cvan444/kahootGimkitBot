@@ -28,4 +28,4 @@ kahootButton.addEventListener('click', function(event) {
 
 
 
-export { kahootTempGameCode, kahootTempBotName,  };
+export { kahootTempGameCode, kahootTempBotName };
