@@ -7,15 +7,15 @@ kahootButton.addEventListener('click', function(event) {
   event.preventDefault();
 
   // Get the values of the input fields
-  const gimkitGameCode = document.getElementById('gimkit-code-1').value;
-  const gimkitBotName = document.getElementById('gimkit-name-1').value;
+  let gimkitGameCode = document.getElementById('gimkit-code-1').value;
+  let gimkitBotName = document.getElementById('gimkit-name-1').value;
 
   // Store the values in session storage
   sessionStorage.setItem('gimkitGameCode', gimkitGameCode);
   sessionStorage.setItem('gimkitBotName', gimkitBotName);
 
-  const gimkitTempGameCode = sessionStorage.getItem('gimkitGameCode');
-  const gimkitTempBotName = sessionStorage.getItem('gimkitBotName');
+  let gimkitTempGameCode = sessionStorage.getItem('gimkitGameCode');
+  let gimkitTempBotName = sessionStorage.getItem('gimkitBotName');
 
 });
 

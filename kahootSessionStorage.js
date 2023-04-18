@@ -7,15 +7,15 @@ kahootButton.addEventListener('click', function(event) {
   event.preventDefault();
 
   // Get the values of the input fields
-  const gameCode = document.getElementById('game-code-1').value;
-  const botName = document.getElementById('kahoot-name-1').value;
+  let gameCode = document.getElementById('game-code-1').value;
+  let botName = document.getElementById('kahoot-name-1').value;
 
   // Store the values in session storage
   sessionStorage.setItem('gameCode', gameCode);
   sessionStorage.setItem('botName', botName);
 
-  const kahootTempGameCode = sessionStorage.getItem('gameCode');
-  const kahootTempBotName = sessionStorage.getItem('botName');
+  let kahootTempGameCode = sessionStorage.getItem('gameCode');
+  let kahootTempBotName = sessionStorage.getItem('botName');
   
 });
 
