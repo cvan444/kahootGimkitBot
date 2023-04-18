@@ -2,9 +2,10 @@ const gimkitForm = document.getElementById('gimkit-form');
 const gimkitButton = document.getElementById('initiate-gimkit-bots');
 
 // Listen for the button click event
-kahootButton.addEventListener('click', function(event) {
+gimkitButton.addEventListener('click', function(event) {
   // Prevent the default button click behavior
   event.preventDefault();
+  gimkitButton.textContent = "Process started";
 
   // Get the values of the input fields
   let gimkitGameCode = document.getElementById('gimkit-code-1').value;

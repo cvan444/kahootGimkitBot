@@ -5,9 +5,11 @@ const kahootButton = document.getElementById('initiate-kahoot-bots');
 kahootButton.addEventListener('click', function(event) {
   // Prevent the default button click behavior
   event.preventDefault();
+  kahootButton.textContent = "Process started";
+
 
   // Get the values of the input fields
-  let kahootGameCode = document.getElementById('game-code-1').value;
+  let kahootGameCode = document.getElementById('kahoot-code-1').value;
   let kahootBotName = document.getElementById('kahoot-name-1').value;
 
   // Store the values in session storage
