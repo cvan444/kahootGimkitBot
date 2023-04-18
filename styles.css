@@ -3,3 +3,11 @@
     background-color: #2F3033;
     color: aliceblue;
 }
+
+input {
+    background-color: #434246;
+}
+
+p {
+ font-style: italic;
+}
