@@ -2,6 +2,9 @@ const puppeteer = require('puppeteer');
 const fs = require('fs/promises')
 const cron = require('node-cron')
 
+import { gameCode, botName } from './kahootSessionStorage.js';
+
+
 
 //Edit these values 
 const kahootKey = ''
