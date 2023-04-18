@@ -57,4 +57,4 @@ async function startGimkit() {
     }
 }
 
-startKahoot()
+startGimkit()
