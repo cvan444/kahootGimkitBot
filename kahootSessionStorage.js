@@ -1,6 +1,11 @@
 const kahootForm = document.getElementById('kahoot-form');
 const kahootButton = document.getElementById('initiate-kahoot-bots');
 
+var kahootTempGameCode;
+var kahootTempBotName;
+
+
+
 // Listen for the button click event
 kahootButton.addEventListener('click', function(event) {
   // Prevent the default button click behavior
