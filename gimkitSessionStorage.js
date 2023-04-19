@@ -11,8 +11,8 @@ gimkitButton.addEventListener('click', function(event) {
   gimkitButton.textContent = "Process started";
 
   // Get the values of the input fields
-  let gimkitGameCode = document.getElementById('gimkit-code-1').value;
-  let gimkitBotName = document.getElementById('gimkit-name-1').value;
+  let gimkitGameCode = document.getElementById('gimkit-code-2').value;
+  let gimkitBotName = document.getElementById('gimkit-name-2').value;
 
   // Store the values in session storage
   sessionStorage.setItem('gimkitGameCode', gimkitGameCode);
