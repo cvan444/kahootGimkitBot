@@ -21,8 +21,8 @@ kahootButton.addEventListener('click', function(event) {
   sessionStorage.setItem('kahootGameCode', kahootGameCode);
   sessionStorage.setItem('kahootBotName', kahootBotName);
 
-  let kahootTempGameCode = sessionStorage.getItem('kahootGameCode');
-  let kahootTempBotName = sessionStorage.getItem('kahootBotName');
+  let kahootTempGameCode = sessionStorage.kahootGameCode;
+  let kahootTempBotName = sessionStorage.kahootBotName;
   
 });
 

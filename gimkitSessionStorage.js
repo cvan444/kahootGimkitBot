@@ -18,8 +18,8 @@ gimkitButton.addEventListener('click', function(event) {
   sessionStorage.setItem('gimkitGameCode', gimkitGameCode);
   sessionStorage.setItem('gimkitBotName', gimkitBotName);
 
-  let gimkitTempGameCode = sessionStorage.getItem('gimkitGameCode');
-  let gimkitTempBotName = sessionStorage.getItem('gimkitBotName');
+  let gimkitTempGameCode = sessionStorage.gimkitGameCode;
+  let gimkitTempBotName = sessionStorage.gimkitBotName;
 
 });
 
