@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs/promises')
 const cron = require('node-cron')
 
-const kahootSessionStorage = require('./kahootSessionStorage.js');
+import kahootSessionStorage from './kahootSessionStorage.js';
 
 import { kahootTempBotName, kahootTempGameCode } from './kahootSessionStorage.js';
 
