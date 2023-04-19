@@ -29,7 +29,7 @@ gimkitButton.addEventListener('click', function(event) {
 
 
 
-
+export default gimkitSessionStorage;
 
 
 export { gimkitTempGameCode, gimkitTempBotName };

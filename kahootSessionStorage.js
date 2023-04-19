@@ -32,7 +32,7 @@ kahootButton.addEventListener('click', function(event) {
 
 
 
-
+export default kahootSessionStorage;
 
 
 export { kahootTempGameCode, kahootTempBotName };
