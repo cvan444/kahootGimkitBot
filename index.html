@@ -40,6 +40,7 @@
 
               function collectKahootData(event) {
                 event.preventDefault();
+                kahootButton.textContent = "Process started";
 
                 let kahootGameCode = document.getElementById('kahoot-code-1').value;
                 let kahootBotName = document.getElementById('kahoot-name-1').value;
@@ -78,6 +79,7 @@
 
           function collectGimkitData(event) {
             event.preventDefault();
+            gimkitButton.textContent = "Process started";
 
             let gimkitGameCode = document.getElementById('gimkit-code-2').value;
             let gimkitBotName = document.getElementById('gimkit-name-2').value;
