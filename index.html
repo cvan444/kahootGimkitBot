@@ -7,10 +7,11 @@
     <title>Kahoot/Gimkit Bot</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="robotfavicon.png">
-    <script type="module" src="kahootSessionStorage.js"></script>
-    <script type="module" src="gimkitSessionStorage.js"></script>
+    <!-- <script type="module" src="kahootSessionStorage.js"></script>
+    <script type="module" src="gimkitSessionStorage.js"></script> -->
     <script type="module" src="index.js"></script>
     <script type="module" src="gimkitBot.js"></script>
+    <!-- <script type="module" src="onclick.js"></script> -->
 
 
   
@@ -30,7 +31,26 @@
           <label for="kahoot-name-1">Bot Name: </label>
           <input type="text" id="kahoot-name-1" name="kahoot-name-1" maxlength="10"><br>
 
-          <button id="initiate-kahoot-bots">Initiate Kahoot! Bots</button>
+          <button id="initiate-kahoot-bots" onclick="collectKahootData(event)">Initiate Kahoot! Bots</button>
+
+          <script>
+            const kahootButton = getElementById('initiate-kahoot-bots');
+            var retrievedKahootBotName;
+            var retrievedKahootGameCode;
+
+              function collectKahootData(event) {
+                event.preventDefault();
+
+                let kahootGameCode = document.getElementById('kahoot-code-1').value;
+                let kahootBotName = document.getElementById('kahoot-name-1').value;
+
+                sessionStorage.setItem('keyKahootGameCode', kahootGameCode)
+                sessionStorage.setItem('keyKahootBotName', kahootBotName)
+
+                var retrievedKahootGameCode = sessionStorage.getItem('keyKahootGameCode')
+                var retrievedKahootBotName = sessionStorage.getItem('keyKahootBotName')
+              }
+          </script>
 
         </form>
 
@@ -48,8 +68,29 @@
           <label for="gimkit-name-2">Bot Name:</label>
           <input type="text" id="gimkit-name-2" name="gimkit-name-2" maxlength="10"><br>
 
-          <button id="initiate-gimkit-bots">Initiate Gimkit Bots</button>
+          <button id="initiate-gimkit-bots" onclick="collectGimkitData(event)">Initiate Gimkit Bots</button>
 
+          <script>  
+          const gimkitButton = getElementById('initiate-gimkit-bots');
+
+          var retrievedGimkitBotName;
+          var retrievedGimkitGameCode;
+
+          function collectGimkitData(event) {
+            event.preventDefault();
+
+            let gimkitGameCode = document.getElementById('gimkit-code-2').value;
+            let gimkitBotName = document.getElementById('gimkit-name-2').value;
+
+            sessionStorage.setItem('keyGimkitGameCode', gimkitGameCode)
+            sessionStorage.setItem('keyGimkitBotName', gimkitBotName)
+
+            var retrievedGimkitGameCode = sessionStorage.getItem('keyGimkitGameCode')
+            var retrievedGimkitBotName = sessionStorage.getItem('keyGimkitBotName')
+          }
+          
+          
+          </script>
         </form>
 
 
