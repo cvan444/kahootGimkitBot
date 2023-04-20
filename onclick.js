@@ -1,5 +1,5 @@
-const kahootButton = getElementById('initiate-kahoot-bots');
-const gimkitButton = getElementById('initiate-gimkit-bots');
+const kahootButton = document.getElementById('initiate-kahoot-bots');
+const gimkitButton = document.getElementById('initiate-gimkit-bots');
 
 
 var retrievedKahootBotName;
