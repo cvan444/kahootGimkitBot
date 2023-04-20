@@ -17,8 +17,8 @@ function collectKahootData(event) {
     sessionStorage.setItem('keyKahootGameCode', kahootGameCode)
     sessionStorage.setItem('keyKahootBotName', kahootBotName)
 
-    var retrievedKahootGameCode = sessionStorage.getItem('keyKahootGameCode')
-    var retrievedKahootBotName = sessionStorage.getItem('keyKahootBotName')
+    retrievedKahootGameCode = sessionStorage.getItem('keyKahootGameCode')
+    retrievedKahootBotName = sessionStorage.getItem('keyKahootBotName')
 }
 
 function collectGimkitData(event) {
@@ -30,6 +30,6 @@ function collectGimkitData(event) {
     sessionStorage.setItem('keyGimkitGameCode', gimkitGameCode)
     sessionStorage.setItem('keyGimkitBotName', gimkitBotName)
 
-    var retrievedGimkitGameCode = sessionStorage.getItem('keyGimkitGameCode')
-    var retrievedGimkitBotName = sessionStorage.getItem('keyGimkitBotName')
+    retrievedGimkitGameCode = sessionStorage.getItem('keyGimkitGameCode')
+    retrievedGimkitBotName = sessionStorage.getItem('keyGimkitBotName')
 }
